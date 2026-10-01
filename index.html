@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0b0d" />
+  <title>31 Nights of October — 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="hero">
+      <div class="eyebrow">PERSONAL HALLOWEEN MARATHON · OCTOBER 2026</div>
+      <div class="hero-grid">
+        <div>
+          <h1>31 Nights<br><span>of October</span></h1>
+          <p class="lede">A personal October watch plan with the useful stuff up front: runtimes, directors, genres, release dates, platforms, episode counts, and the nights already spoken for.</p>
+        </div>
+        <div class="progress-card">
+          <div class="progress-number"><span id="confirmedCount">22</span><small>/ 31</small></div>
+          <div id="progressLabel" class="progress-label">11 movies + 11 series nights planned</div>
+          <div class="progress-track"><div id="progressFill" class="progress-fill"></div></div>
+          <div class="progress-foot"><span id="openCount">30 nights open</span><span>October 1–31</span></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="stats-strip" aria-label="Marathon metadata">
+      <div><span>Movies</span><strong id="movieCount">11</strong></div>
+      <div><span>Series</span><strong id="seriesCount">3</strong></div>
+      <div><span>Series episodes</span><strong id="episodeCount">22</strong></div>
+      <div><span>Movie runtime</span><strong id="movieRuntime">—</strong></div>
+      <div><span>Open nights</span><strong id="openNightCount">6</strong></div>
+    </section>
+
+    <section class="section featured-section">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">MOVIE SLATE</div>
+          <h2>Feature films.</h2>
+          <p class="section-copy">Each card carries the details that matter for planning the month: runtime, director, genre, rating, origin, release information, and where it streams when useful.</p>
+        </div>
+      </div>
+      <div id="confirmedMovies" class="confirmed-grid"></div>
+    </section>
+
+    <section class="section series-section">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">SERIES NIGHTS</div>
+          <h2>Two episodes. Every night.</h2>
+          <p class="section-copy">Carrie, Below, and Crystal Lake are scheduled in strict two-episode blocks on consecutive nights with no gaps inside each series run.</p>
+        </div>
+      </div>
+      <div id="seriesSchedule" class="series-grid"></div>
+    </section>
+
+    <section class="section calendar-section">
+      <div class="section-heading calendar-heading">
+        <div>
+          <div class="kicker">THE MONTH</div>
+          <h2>31 nights. Movies & series.</h2>
+        </div>
+        <div class="legend"><span><i class="dot confirmed-dot"></i> Confirmed</span><span><i class="dot open-dot"></i> Open</span></div>
+      </div>
+      <div id="calendar" class="calendar-grid"></div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
